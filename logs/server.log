@@ -1,20 +1,18 @@
 INFO:     Will watch for changes in these directories: ['/home/workspace']
 INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-INFO:     Started reloader process [158] using StatReload
-INFO:     Started server process [160]
+INFO:     Started reloader process [212] using StatReload
+INFO:     Started server process [214]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
-INFO:     172.20.0.1:50398 - "HEAD / HTTP/1.1" 405 Method Not Allowed
-INFO:     172.20.0.1:35634 - "GET /api/sessions/recent HTTP/1.1" 200 OK
-INFO:     172.20.0.1:35658 - "GET /api/products/essentials HTTP/1.1" 200 OK
-INFO:     172.20.0.1:35634 - "OPTIONS /api/sessions HTTP/1.1" 200 OK
-INFO:     172.20.0.1:35664 - "OPTIONS /api/sessions HTTP/1.1" 200 OK
-INFO:     172.20.0.1:35668 - "GET /api/products/favorites HTTP/1.1" 200 OK
-INFO:     172.20.0.1:35658 - "GET /api/sessions/recent HTTP/1.1" 200 OK
-INFO:     172.20.0.1:35646 - "GET /api/products/trending HTTP/1.1" 200 OK
-INFO:     172.20.0.1:35650 - "GET /api/sessions?limit=30 HTTP/1.1" 200 OK
-INFO:     172.20.0.1:35634 - "GET /api/products/essentials HTTP/1.1" 200 OK
-INFO:     172.20.0.1:35664 - "POST /api/sessions HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:37364 - "HEAD / HTTP/1.1" 405 Method Not Allowed
+INFO:     172.20.0.1:53402 - "GET /api/products/essentials HTTP/1.1" 200 OK
+INFO:     172.20.0.1:53432 - "OPTIONS /api/sessions HTTP/1.1" 200 OK
+INFO:     172.20.0.1:53418 - "GET /api/products/favorites HTTP/1.1" 200 OK
+INFO:     172.20.0.1:53440 - "OPTIONS /api/sessions HTTP/1.1" 200 OK
+INFO:     172.20.0.1:53402 - "GET /api/sessions?limit=30 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:53418 - "GET /api/products/essentials HTTP/1.1" 200 OK
+INFO:     172.20.0.1:53432 - "GET /api/products/favorites HTTP/1.1" 200 OK
+INFO:     172.20.0.1:53440 - "POST /api/sessions HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/fastapi/encoders.py", line 322, in jsonable_encoder
@@ -85,7 +83,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/fastapi/encoders.py", line 330, in jsonable_encoder
     raise ValueError(errors) from e
 ValueError: [TypeError("'ObjectId' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
-INFO:     172.20.0.1:35668 - "POST /api/sessions HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:53402 - "POST /api/sessions HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/fastapi/encoders.py", line 322, in jsonable_encoder
@@ -156,6 +154,8 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/fastapi/encoders.py", line 330, in jsonable_encoder
     raise ValueError(errors) from e
 ValueError: [TypeError("'ObjectId' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
-INFO:     172.20.0.1:35658 - "GET /api/products/favorites HTTP/1.1" 200 OK
-INFO:     172.20.0.1:35646 - "GET /api/products/trending HTTP/1.1" 200 OK
-INFO:     172.20.0.1:35650 - "GET /api/sessions?limit=30 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:53454 - "GET /api/sessions/recent HTTP/1.1" 200 OK
+INFO:     172.20.0.1:53468 - "GET /api/products/trending HTTP/1.1" 200 OK
+INFO:     172.20.0.1:53418 - "GET /api/sessions?limit=30 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:53432 - "GET /api/sessions/recent HTTP/1.1" 200 OK
+INFO:     172.20.0.1:53418 - "GET /api/products/trending HTTP/1.1" 200 OK
